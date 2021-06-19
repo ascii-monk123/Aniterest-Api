@@ -5,6 +5,7 @@ const schema = mongoose.Schema;
 //posts schema for profile posts
 const PostSchema = new schema({
   text: String,
+  likes: Number,
   imageUrl: {
     type: String,
     required: true,
