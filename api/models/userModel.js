@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 const schema = mongoose.Schema;
 
-const userSchame = new schema({
+const userSchema = new schema({
   username: String,
   first_name: String,
   last_name: String,
@@ -25,4 +25,4 @@ const userSchame = new schema({
   ],
 });
 
-module.exports = mongoose.model("userModel", userSchame, "users");
+module.exports = mongoose.model("userModel", userSchema, "users");
